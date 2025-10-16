@@ -39,7 +39,7 @@ table tr:hover {
 /* This is the class selector */
 
 #main-header {
-    background-color: #4CAF50; /* Green background */
+    background-color: #000000; /* Green background */
     color: white; /* White text */
     padding: 1em 0; /* Padding for spacing */
     text-align: center; /* Centered text */
@@ -54,4 +54,13 @@ a[href="index.html"] {
     color: #4CAF50; /* Green color for links */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold text */
+}
+
+#header1 {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 1em 0; /* Padding for spacing */
+    text-align: center; /* Centered text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
