@@ -11,6 +11,7 @@
         <h1 id="site-title">AI in Everyday Life</h1>
     </header>
 
+    <!-- ✅ Sticky Navigation Bar -->
     <nav id="nav-bar">
         <ul id="nav-list">
             <li id="nav-home"><a href="index.html" id="home-link">Home</a></li>
@@ -19,81 +20,96 @@
         </ul>
     </nav>
 
-    <main id="main-content">
-        <article id="article1" class="article">
-            <header id="article1-header">
-                <h2 id="article1-title">How AI Assistants Are Changing My Student Life</h2>
-                <p id="article1-meta">By <address id="author1">Zachary Robinson</address>  
-                <time id="time1" datetime="2025-10-06">October 6, 2025</time></p>
-            </header>
+    <!-- ✅ Two-Column Flexbox Layout starts here -->
+    <div id="content-wrapper">
+        <main id="main-content">
+            <article id="article1" class="article">
+                <header id="article1-header">
+                    <h2 id="article1-title">How AI Assistants Are Changing My Student Life</h2>
+                    <p id="article1-meta">By <address id="author1">Zachary Robinson</address>  
+                    <time id="time1" datetime="2025-10-06">October 6, 2025</time></p>
+                </header>
 
-            <figure id="fig1">
-                <img id="img1" src="image.png" alt="AI assistant on a phone" width="200">
-                <figcaption id="figcap1">My phone's AI assistant in action.</figcaption>
-            </figure>
+                <!-- ✅ Floated Image with Caption -->
+                <figure id="fig1">
+                    <img id="img1" src="image.png" alt="AI assistant on a phone" width="200">
+                    <figcaption id="figcap1">My phone's AI assistant in action.</figcaption>
+                </figure>
 
-            <p id="p1">As a student, I'm always juggling classes, assignments, and a part-time job...</p>
-            <p id="p2">Take my morning routine: my Google Home wakes me up...</p>
-            <p id="p3">AI isn't just about convenience, though...</p>
-            <p id="p4">Looking ahead, I’m excited about where AI is going...</p>
-        </article>
+                <p id="p1">As a student, I'm always juggling classes, assignments, and a part-time job...</p>
+                <p id="p2">Take my morning routine: my Google Home wakes me up...</p>
+                <p id="p3">AI isn't just about convenience, though...</p>
+                <p id="p4">Looking ahead, I’m excited about where AI is going...</p>
+            </article>
 
-        <article id="article2" class="article">
-            <header id="article2-header">
-                <h2 id="article2-title">AI in Healthcare: Cool but Kinda Scary</h2>
-                <p id="article2-meta">By <address id="author2">Zachary Robinson</address> | 
-                <time id="time2" datetime="2025-10-06">October 6, 2025</time></p>
-            </header>
+            <article id="article2" class="article">
+                <header id="article2-header">
+                    <h2 id="article2-title">AI in Healthcare: Cool but Kinda Scary</h2>
+                    <p id="article2-meta">By <address id="author2">Zachary Robinson</address> | 
+                    <time id="time2" datetime="2025-10-06">October 6, 2025</time></p>
+                </header>
 
-            <figure id="fig2">
-                <img id="img2" src="imagecopy.png" alt="AI analyzing medical scans" width="200">
-                <figcaption id="figcap2">AI checking out medical scans.</figcaption>
-            </figure>
+                <figure id="fig2">
+                    <img id="img2" src="imagecopy.png" alt="AI analyzing medical scans" width="200">
+                    <figcaption id="figcap2">AI checking out medical scans.</figcaption>
+                </figure>
 
-            <p id="p5">I'm taking a health science elective this semester...</p>
-            <p id="p6">AI can look at X-rays or MRIs and spot things...</p>
-            <p id="p7">But there’s a catch. If the data AI learns from is biased...</p>
-            <p id="p8">Here’s a quick table I made up...</p>
+                <p id="p5">I'm taking a health science elective this semester...</p>
+                <p id="p6">AI can look at X-rays or MRIs and spot things...</p>
+                <p id="p7">But there’s a catch. If the data AI learns from is biased...</p>
+                <p id="p8">Here’s a quick table I made up...</p>
 
-            <table id="ai-table">
-                <thead>
-                    <tr>
-                        <th>Area</th>
-                        <th>AI Use (%)</th>
-                        <th>Growth by 2030</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diagnostics</td>
-                        <td>40</td>
-                        <td>25%</td>
-                    </tr>
-                    <tr>
-                        <td>Drug Research</td>
-                        <td>30</td>
-                        <td>45%</td>
-                    </tr>
-                    <tr>
-                        <td>Patient Care</td>
-                        <td>20</td>
-                        <td>35%</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table id="ai-table">
+                    <thead>
+                        <tr>
+                            <th>Area</th>
+                            <th>AI Use (%)</th>
+                            <th>Growth by 2030</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diagnostics</td>
+                            <td>40</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Drug Research</td>
+                            <td>30</td>
+                            <td>45%</td>
+                        </tr>
+                        <tr>
+                            <td>Patient Care</td>
+                            <td>20</td>
+                            <td>35%</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <p id="p9">AI’s potential in healthcare is huge...</p>
-        </article>
+                <p id="p9">AI’s potential in healthcare is huge...</p>
+            </article>
 
-        <section id="newsletter">
-            <h2 id="newsletter-title">Join My Newsletter</h2>
-            <form id="signup-form" name="signup" netlify>
-                <label for="email" id="email-label">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit" id="signup-button">Sign Up</button>
-            </form>
-        </section>
-    </main>
+            <section id="newsletter">
+                <h2 id="newsletter-title">Join My Newsletter</h2>
+                <form id="signup-form" name="signup" netlify>
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit" id="signup-button">Sign Up</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- ✅ Sidebar for two-column layout -->
+        <aside id="sidebar">
+            <h3>Quick Facts</h3>
+            <ul>
+                <li>AI is used in smartphones and cars.</li>
+                <li>Machine Learning helps AI make predictions.</li>
+                <li>Ethics are key in responsible AI design.</li>
+            </ul>
+        </aside>
+    </div>
+    <!-- End of Two-Column Layout -->
 
     <footer id="main-footer">
         <p id="footer-text">&copy; 2025 Zachary Robinson</p>

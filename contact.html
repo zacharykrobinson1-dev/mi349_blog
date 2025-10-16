@@ -6,43 +6,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Contact Zachary Robinson</title>
 </head>
-<body>
-    <header>
-        <h1>AI in Everyday Life</h1>
+<body id="body">
+    <header id="main-header">
+        <h1 id="site-title">AI in Everyday Life</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+    <nav id="nav-bar">
+        <ul id="nav-list">
+            <li id="nav-home"><a href="index.html" id="home-link">Home</a></li>
+            <li id="nav-about"><a href="about.html" id="about-link">About</a></li>
+            <li id="nav-contact"><a href="contact.html" id="contact-link">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <form name="contact" netlify>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="reason">Reason for Contact:</label>
-                <select id="reason" name="reason" required>
-                    <option value="saying-hi">Saying Hi</option>
-                    <option value="contractor">Looking for a Contractor</option>
-                    <option value="interview">Interested in an Interview</option>
-                </select>
-                
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="5" required></textarea>
-                
-                <button type="submit">Submit</button>
+
+    <main id="main-content">
+        <section id="contact-section" class="article">
+            <h2 id="contact-title">Get in Touch</h2>
+            <form name="contact" netlify id="contact-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason" name="reason" required>
+                        <option value="saying-hi">Saying Hi</option>
+                        <option value="contractor">Looking for a Contractor</option>
+                        <option value="interview">Interested in an Interview</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">Submit</button>
             </form>
         </section>
+
+        <aside id="sidebar">
+            <h3>Connect With Me</h3>
+            <ul>
+                <li>Email: zachary@example.com</li>
+                <li>Instagram: @zach_ai</li>
+                <li>GitHub: zachrob</li>
+            </ul>
+        </aside>
     </main>
-    <footer>
-        <p>&copy; 2025 Zachary Robinson</p>
+
+    <footer id="main-footer">
+        <p id="footer-text">&copy; 2025 Zachary Robinson</p>
     </footer>
 </body>
 </html>
