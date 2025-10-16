@@ -32,3 +32,13 @@ table tr:hover {
   background-color: #f1f7ff;
   transition: background 0.2s;
 }
+
+
+#main-header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 1em 0; /* Padding for spacing */
+    text-align: center; /* Centered text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
