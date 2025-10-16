@@ -50,7 +50,7 @@ table tr:hover {
 /*attribute selectors is the a []*/
 
 
-a [href="index.html"] {
+a[href="index.html"] {
     color: #4CAF50; /* Green color for links */
     text-decoration: none; /* Remove underline */
     font-weight: bold; /* Bold text */
