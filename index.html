@@ -6,50 +6,56 @@
     <link rel="stylesheet" href="style.css">
     <title>AI in Everyday Life Blog</title>
 </head>
-<body>
+<body id="body">
     <header id="main-header">
-
-        <h1>AI in Everyday Life</h1>
+        <h1 id="site-title">AI in Everyday Life</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+
+    <nav id="nav-bar">
+        <ul id="nav-list">
+            <li id="nav-home"><a href="index.html" id="home-link">Home</a></li>
+            <li id="nav-about"><a href="about.html" id="about-link">About</a></li>
+            <li id="nav-contact"><a href="contact.html" id="contact-link">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <article>
-            <header id="header1">
-                <h2>How AI Assistants Are Changing My Student Life</h2>
-                <p>By <address class="author">Zachary Robinson</address>  <time datetime="2025-10-06">October 6, 2025</time></p>
+
+    <main id="main-content">
+        <article id="article1" class="article">
+            <header id="article1-header">
+                <h2 id="article1-title">How AI Assistants Are Changing My Student Life</h2>
+                <p id="article1-meta">By <address id="author1">Zachary Robinson</address>  
+                <time id="time1" datetime="2025-10-06">October 6, 2025</time></p>
             </header>
+
             <figure id="fig1">
-
-                <img src="image.png" alt="AI assistant on a phone" width="200">
-                <figcaption>My phone's AI assistant in action.</figcaption>
-            </figure id="fig2">
-            <p>As a student, I'm always juggling classes, assignments, and a part-time job. AI assistants have become a game-changer for me. From Siri helping me set reminders for deadlines to apps like Grammarly catching my typos, AI is making my life easier. I wanted to share how these tools are helping me and other students out.</p>
-            <p>Take my morning routine: my Google Home wakes me up with a playlist and tells me the weather so I know if I need a jacket for class. In school, AI tools like Notion's smart summaries help me organize my notes from lectures. Even Netflix's recommendation system saves me time picking shows to unwind with after studying. These things sound small, but they add up when you're busy.</p>
-            <p>AI isn't just about convenience, though. Apps like Duolingo use it to help me practice Spanish at my own pace, which is great for my language requirement. But I'm also wondering about the downsides, like how much data these apps collect. Are they sharing my study habits? It's something I think about as a comp sci student. I want to learn more about keeping AI ethical.</p>
-            <p>Looking ahead, I’m excited about where AI is going. Self-driving cars sound awesome for road trips, and smarter AI tutors could help with tough subjects like calculus. But I also worry about jobs—will AI take over coding gigs? For now, I'm just stoked to use these tools to stay on top of my schoolwork. (Word count: 256)</p>
-        </article>
-        <article>
-            <header id="header3">
-                <h2>AI in Healthcare: Cool but Kinda Scary</h2>
-                <p>By <address class="author">Zachary Robinson</address> | <time datetime="2025-10-06">October 6, 2025</time></p>
-            </header>
-            <figure>
-                <img src="imagecopy.png" alt="AI analyzing medical scans" width="200">
-                <figcaption>AI checking out medical scans.</figcaption>
+                <img id="img1" src="image.png" alt="AI assistant on a phone" width="200">
+                <figcaption id="figcap1">My phone's AI assistant in action.</figcaption>
             </figure>
-            <p>I'm taking a health science elective this semester, and we talked about how AI is shaking up healthcare. It’s wild to think about, so I wanted to dive into it for this blog. AI is doing some amazing stuff, like catching diseases early and speeding up medicine research, but it’s not perfect. Here's what I found out.</p>
-            <p>AI can look at X-rays or MRIs and spot things like tumors faster than doctors sometimes. That’s huge for catching stuff early. It’s also helping make new drugs quicker by testing thousands of combos in simulations. During COVID, AI tracked how the virus spread, which helped hospitals plan. I think that’s pretty cool for a computer science nerd like me.</p>
-            <p>But there’s a catch. If the data AI learns from is biased, it can mess up—like misdiagnosing people from certain groups. Also, I read that doctors still need to double-check AI because it’s not always right. Plus, it’s kinda creepy thinking about machines making health decisions. We need rules to keep things safe.</p>
-            <p>Here’s a quick table I made up about how hospitals are using AI, based on some articles I skimmed:</p>
-            <table>
 
+            <p id="p1">As a student, I'm always juggling classes, assignments, and a part-time job...</p>
+            <p id="p2">Take my morning routine: my Google Home wakes me up...</p>
+            <p id="p3">AI isn't just about convenience, though...</p>
+            <p id="p4">Looking ahead, I’m excited about where AI is going...</p>
+        </article>
 
+        <article id="article2" class="article">
+            <header id="article2-header">
+                <h2 id="article2-title">AI in Healthcare: Cool but Kinda Scary</h2>
+                <p id="article2-meta">By <address id="author2">Zachary Robinson</address> | 
+                <time id="time2" datetime="2025-10-06">October 6, 2025</time></p>
+            </header>
+
+            <figure id="fig2">
+                <img id="img2" src="imagecopy.png" alt="AI analyzing medical scans" width="200">
+                <figcaption id="figcap2">AI checking out medical scans.</figcaption>
+            </figure>
+
+            <p id="p5">I'm taking a health science elective this semester...</p>
+            <p id="p6">AI can look at X-rays or MRIs and spot things...</p>
+            <p id="p7">But there’s a catch. If the data AI learns from is biased...</p>
+            <p id="p8">Here’s a quick table I made up...</p>
+
+            <table id="ai-table">
                 <thead>
                     <tr>
                         <th>Area</th>
@@ -75,23 +81,22 @@
                     </tr>
                 </tbody>
             </table>
-            
 
-
-
-            <p>AI’s potential in healthcare is huge, but we gotta make sure it’s fair and safe. I’m curious to see how it evolves by the time I graduate! (Word count: 282)</p>
+            <p id="p9">AI’s potential in healthcare is huge...</p>
         </article>
+
         <section id="newsletter">
-            <h2>Join My Newsletter</h2>
-            <form name="signup" netlify>
-                <label for="email">Email:</label>
+            <h2 id="newsletter-title">Join My Newsletter</h2>
+            <form id="signup-form" name="signup" netlify>
+                <label for="email" id="email-label">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <button type="submit">Sign Up</button>
+                <button type="submit" id="signup-button">Sign Up</button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Zachary Robinson</p>
+
+    <footer id="main-footer">
+        <p id="footer-text">&copy; 2025 Zachary Robinson</p>
     </footer>
 </body>
 </html>
