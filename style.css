@@ -1,3 +1,5 @@
+/* This is the ID tag */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -34,6 +36,8 @@ table tr:hover {
 }
 
 
+/* This is the class selector */
+
 #main-header {
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
@@ -41,4 +45,13 @@ table tr:hover {
     text-align: center; /* Centered text */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/*attribute selectors is the a []*/
+
+
+a [href="index.html"] {
+    color: #4CAF50; /* Green color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
 }
