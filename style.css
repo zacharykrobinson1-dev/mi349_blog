@@ -64,3 +64,21 @@ a[href="index.html"] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+#fig1 {
+    text-align: center; /* Center the figure */
+    margin: 1em 0; /* Margin for spacing */
+}
+#fig1 img {
+    border: 2px solid #ddd; /* Light border around the image */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+#fig1 figcaption {
+    font-style: italic; /* Italic caption */
+    color: #555; /* Dark gray text */
+    margin-top: 0.5em; /* Space above caption */
+    font-size: 0.9em; /* Slightly smaller text */
+}   
