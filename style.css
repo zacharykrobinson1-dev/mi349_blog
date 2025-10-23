@@ -340,7 +340,7 @@ a[href="index.html"] {
     gap: 20px;
 }
 
-/* Main section (article) takes most of the width */
+
 .article, #about-section, #contact-section {
     flex: 3;
     background-color: #fff;
@@ -348,7 +348,7 @@ a[href="index.html"] {
     padding: 20px;
 }
 
-/* Sidebar styling */
+
 #sidebar {
     flex: 1;
     background-color: #f4f4f4;
@@ -357,7 +357,7 @@ a[href="index.html"] {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Sidebar list */
+
 #sidebar ul {
     list-style-type: none;
     padding-left: 0;
@@ -366,14 +366,14 @@ a[href="index.html"] {
     margin-bottom: 10px;
 }
 
-/* Sticky nav bar (applies globally) */
+
 #nav-bar {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Two-column Flexbox form layout */
+
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -383,6 +383,7 @@ a[href="index.html"] {
     display: flex;
     flex-direction: column;
 }
+/* Form responsive layout for larger screens */
 @media (min-width: 700px) {
     .form-row {
         flex-direction: row;
@@ -398,14 +399,62 @@ a[href="index.html"] {
     .form-row textarea {
         flex: 2;
     }
+
+    /* 1️⃣ Make form container wider and centered */
+    #contact-form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* 2️⃣ Slightly increase form text size for readability */
+    .form-row label {
+        font-size: 1.05em;
+    }
+
+    /* 3️⃣ Add padding around form inputs */
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        padding: 8px;
+    }
 }
 
-/* Sidebar responsive behavior */
+/* Sidebar responsive behavior for smaller screens */
 @media (max-width: 800px) {
     #main-content {
         flex-direction: column;
     }
     #sidebar {
         order: -1;
+    }
+
+    /* 4️⃣ Make images scale properly on small screens */
+    img, #fig1 img, #fig2 img, #fig3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 5️⃣ Adjust text size and line spacing for readability */
+    body, p, li {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    /* 6️⃣ Reduce padding for headers and footer */
+    #main-header, #main-footer {
+        padding: 10px;
+    }
+
+    /* Navigation bar */
+    #nav-bar {
+        background-color: #0055a5;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    /* 7️⃣ Stack navigation links vertically for touch screens */
+    #nav-list li {
+        display: block;
+        margin: 8px 0;
     }
 }
